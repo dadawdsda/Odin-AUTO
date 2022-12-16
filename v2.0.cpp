@@ -9,14 +9,14 @@ void move(int x, int y)
 	mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
 	Sleep(10);
 	mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-	Sleep(1000);
+	Sleep(1300);
 }
 int main()
 {
-	system("title ºÚ°å×Ô¶¯µ÷Õû³ÌÐò ver2.0");
-	cout << "ºÚ°å×Ô¶¯µ÷Õû³ÌÐò(ºÚ°å°×±Ê) v2.0" << endl;
-	cout << "Author: 2020¼¶4°à Jian Hengtao" << endl;
-	cout << "µÈ´ýºÚ°åÆô¶¯ÖÐ£¬Çë²»Òª²Ù×÷" << endl;
+	system("title é»‘æ¿è‡ªåŠ¨è°ƒæ•´ç¨‹åº ver2.0");
+	cout << "é»‘æ¿è‡ªåŠ¨è°ƒæ•´ç¨‹åº(é»‘æ¿ç™½ç¬”) v2.0" << endl;
+	cout << "Author: 2020çº§4ç­ Jian Hengtao" << endl;
+	cout << "ç­‰å¾…é»‘æ¿å¯åŠ¨ä¸­ï¼Œè¯·ä¸è¦æ“ä½œ" << endl;
 	for (int i = 0; i <= 60; i++)
 	{
 
@@ -29,7 +29,7 @@ int main()
 		blue = GetBValue(pixel);
 		if (red == 7 && green == 106 && blue == 75)
 		{
-			cout << "¼ì²âµ½ºÚ°åÒÑÆô¶¯" << endl;
+			cout << "æ£€æµ‹åˆ°é»‘æ¿å·²å¯åŠ¨" << endl;
 			Sleep(1000);
 			move(800, 1030);
 			move(690, 930);
@@ -39,14 +39,14 @@ int main()
 			move(1115, 1035);
 			move(159, 1024);
 			move(960, 540);
-			cout << "µ÷ÕûÍê³É£¬³ÌÐò½áÊø" << endl;
+			cout << "è°ƒæ•´å®Œæˆï¼Œç¨‹åºç»“æŸ" << endl;
 			Sleep(3000);
 			break;
 		}
 		Sleep(1000);
 		if (i == 59)
 		{
-			cout << "ºÚ°åÎ´ÄÜ³É¹¦Æô¶¯£¬³ÌÐò¼´½«ÍË³ö" << endl;
+			cout << "é»‘æ¿æœªèƒ½æˆåŠŸå¯åŠ¨ï¼Œç¨‹åºå³å°†é€€å‡º" << endl;
 			Sleep(3000);
 		}
 	}
